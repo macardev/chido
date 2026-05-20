@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chido Mexican Food | İstanbul, Kadıköy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">Chido</a>
+      <button class="hamburger" id="hamburger" aria-label="Menüyü Aç">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="active">Ana Sayfa</a></li>
+        <li><a href="#hakkimizda">Hakkımızda</a></li>
+        <li><a href="#menu">Menü</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+        <li><a href="#konum">Konum</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- PARALLAX BURRITO -->
+  <div id="parallax-burrito">
+    <img src="public/images/burito.png" alt="Burrito" class="burrito-img">
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-container">
+      <div class="hero-content fade-in">
+        <h1>Burrito'yu Hak Ediyorsun.</h1>
+        <p class="subtitle">Gerçek Meksika lezzetleri, Chido'da.</p>
+        <p>Chido, her lokmada özgün bir Meksika deneyimi sunar. Taze malzemeler, samimi tarifler ve Yasin Taşkan'ın tutkusu ile hazırlanmış menümüzle tanışın.</p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn-primary">Menüyü Keşfet</a>
+          <a href="#iletisim" class="btn-secondary">Bize Ulaşın</a>
+        </div>
+      </div>
+        <div class="hero-image fade-in-right delay-200">
+        <div class="hero-blob"></div>
+        <div class="chef-card">
+          <img src="public/images/yasin.jpeg" alt="Yasin Taşkan - Şef">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HAKKIMIZDA -->
+  <section id="hakkimizda">
+    <div class="hakkimizda-container">
+      <div class="hakkimizda-text fade-in-left">
+        <p class="tag">Hikayemiz</p>
+        <h2>Lezzet Bir Tutku Meselesi</h2>
+        <p>Chido, Meksika sokaklarının sıcak ve samimi lezzetini İstanbul'a taşıma hayaliyle doğdu. Kurucumuz Yasin Taşkan, Meksika'ya yaptığı seyahatlerde edindiği tarifleri, Anadolu'nun taze malzemeleriyle harmanlayarak benzersiz bir mutfak yarattı.</p>
+        <p>Her tabakta, taptaze avokadolardan seçilmiş baharatlara kadar en kaliteli malzemeleri kullanıyoruz. Tariflerimizdeki her ayrıntı, müşterilerimize unutulmaz bir lezzet yolculuğu yaşatmak için özenle düşünülmüştür.</p>
+        <p>Yasin Taşkan'ın liderliğindeki ekibimiz, her gün aynı tutku ve heyecanla sizlere en iyi Meksika deneyimini sunmak için çalışıyor.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="stats-grid fade-in-right">
+        <div class="stat-card fade-in delay-100">
+          <div class="icon">🌮</div>
+          <div class="stat-value">500+</div>
+          <div class="stat-label">Günlük Servis</div>
+        </div>
+        <div class="stat-card fade-in delay-200">
+          <div class="icon">⭐</div>
+          <div class="stat-value">4.9</div>
+          <div class="stat-label">Müşteri Puanı</div>
+        </div>
+        <div class="stat-card fade-in delay-300">
+          <div class="icon">🫙</div>
+          <div class="stat-value">12+</div>
+          <div class="stat-label">Özel Sos Tarifi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÜ -->
+  <section id="menu">
+    <div class="section-header fade-in">
+      <p class="tag">Lezzetlerimiz</p>
+      <h2>Menümüzden Seçmeler</h2>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card fade-in-scale delay-100">
+        <div class="food-icon">🌯</div>
+        <h3>Classic Burrito</h3>
+        <p class="description">Dana kıyma, taze salsa, guacamole</p>
+        <p class="price">₺285</p>
+        <a href="#" class="btn-order">Sipariş Ver</a>
+      </div>
+      <div class="menu-card fade-in-scale delay-200">
+        <div class="food-icon">🧀</div>
+        <h3>Chicken Quesadilla</h3>
+        <p class="description">Izgara tavuk, cheddar, acı biber</p>
+        <p class="price">₺245</p>
+        <a href="#" class="btn-order">Sipariş Ver</a>
+      </div>
+      <div class="menu-card fade-in-scale delay-300">
+        <div class="food-icon">🌮</div>
+        <h3>Veggie Taco</h3>
+        <p class="description">Izgara sebze, avokado kreması, kişniş</p>
+        <p class="price">₺195</p>
+        <a href="#" class="btn-order">Sipariş Ver</a>
+      </div>
+      <div class="menu-card fade-in-scale delay-400">
+        <div class="food-icon">🍟</div>
+        <h3>Nachos Supreme</h3>
+        <p class="description">Tortilla cipsi, üç peynir sosu, jalapeño</p>
+        <p class="price">₺220</p>
+        <a href="#" class="btn-order">Sipariş Ver</a>
+      </div>
+      <div class="menu-card fade-in-scale delay-500">
+        <div class="food-icon">🥣</div>
+        <h3>Carnitas Bowl</h3>
+        <p class="description">Yavaş pişirilmiş et, pirinç, fasulye</p>
+        <p class="price">₺265</p>
+        <a href="#" class="btn-order">Sipariş Ver</a>
+      </div>
+      <div class="menu-card fade-in-scale delay-600">
+        <div class="food-icon">🍩</div>
+        <h3>Churros Dessert</h3>
+        <p class="description">Tarçın şekeri, çikolata sosu</p>
+        <p class="price">₺120</p>
+        <a href="#" class="btn-order">Sipariş Ver</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- İLETİŞİM -->
+  <section id="iletisim">
+    <div class="section-header fade-in">
+      <p class="tag">İletişim</p>
+      <h2>Bizimle İletişime Geç</h2>
+    </div>
+    <div class="iletisim-container">
+      <div class="iletisim-info fade-in-left">
+        <h3>Bize Ulaşın</h3>
+        <div class="info-item"><span class="info-icon">📍</span> Rasimpaşa, Nuhbey Sok. NO15A, 34744 Kadıköy/İstanbul</div>
+        <div class="info-item"><span class="info-icon">📞</span> +90 553 094 80 58</div>
+        <div class="info-item"><span class="info-icon">🕐</span> Pzt-Paz: 11:00 - 23:00</div>
+        <div class="info-item"><span class="info-icon">📧</span> merhaba@chidomexican.com</div>
+      </div>
+      <form class="contact-form fade-in-right delay-200">
+        <input type="text" placeholder="Ad Soyad" required>
+        <input type="email" placeholder="E-posta" required>
+        <textarea placeholder="Mesajınız" required></textarea>
+        <button type="submit" class="btn-primary">Gönder</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- KONUM & HARİTA -->
+  <section id="konum">
+    <div class="section-header fade-in">
+      <p class="tag">Bizi Bulun</p>
+      <h2>Neredeyiz?</h2>
+    </div>
+    <div class="map-container fade-in-scale">
+      <div class="map-wrapper">
+        <iframe src="https://www.google.com/maps?q=Rasimpa%C5%9Fa+Nuhbey+Sok+NO15A+Kad%C4%B1k%C3%B6y+%C4%B0stanbul&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Chido Konum"></iframe>
+      </div>
+      <div class="whatsapp-container">
+        <a href="https://wa.me/905530948058" target="_blank" rel="noopener" class="btn-whatsapp">💬 WhatsApp ile Rezervasyon Yap</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERİ -->
+  <section id="galeri">
+    <div class="section-header fade-in">
+      <p class="tag">Galeri</p>
+      <h2>Mekanımızdan Kareler</h2>
+    </div>
+    <div class="gallery-sticky">
+      <div class="gallery-track">
+        <div class="gallery-item"><img src="public/images/chido1.jpg" alt="Chido Mexican Food" loading="lazy"></div>
+        <div class="gallery-item"><img src="public/images/chido2.jpg" alt="Chido Mexican Food" loading="lazy"></div>
+        <div class="gallery-item"><img src="public/images/chido3.jpg" alt="Chido Mexican Food" loading="lazy"></div>
+        <div class="gallery-item"><img src="public/images/chido4.jpg" alt="Chido Mexican Food" loading="lazy"></div>
+        <div class="gallery-item"><img src="public/images/chido1.jpg" alt="Chido Mexican Food" loading="lazy"></div>
+        <div class="gallery-item"><img src="public/images/chido2.jpg" alt="Chido Mexican Food" loading="lazy"></div>
+        <div class="gallery-item"><img src="public/images/chido3.jpg" alt="Chido Mexican Food" loading="lazy"></div>
+        <div class="gallery-item"><img src="public/images/chido4.jpg" alt="Chido Mexican Food" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-container fade-in">
+      <div class="footer-logo">Chido</div>
+      <p class="footer-tagline">Gerçek Meksika, Gerçek Lezzet.</p>
+      <div class="footer-nav">
+        <a href="#hero">Ana Sayfa</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#menu">Menü</a>
+        <a href="#iletisim">İletişim</a>
+        <a href="#konum">Konum</a>
+        <a href="#galeri">Galeri</a>
+      </div>
+      <div class="footer-contact">
+        <span>📍 Rasimpaşa, Nuhbey Sok. NO15A, 34744 Kadıköy/İstanbul</span>
+        <span>📞 +90 553 094 80 58</span>
+      </div>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">👍</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+      <div class="footer-divider"></div>
+      <p class="footer-copyright">© 2025 Chido Mexican Food. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
