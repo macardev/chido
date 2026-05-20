@@ -33,20 +33,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const navAnchors = document.querySelectorAll('.nav-links a');
 
   const observerOptions = {
-    threshold: 0.25,
+    threshold: 0.1,
     rootMargin: '-80px 0px 0px 0px'
   };
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       const fadeEls = entry.target.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right, .fade-in-scale, .fade-in-rotate');
-      fadeEls.forEach(el => {
-        if (entry.isIntersecting) {
-          el.classList.add('visible');
-        } else {
-          el.classList.remove('visible');
-        }
-      });
+      if (entry.isIntersecting) {
+        fadeEls.forEach(el => el.classList.add('visible'));
+      }
 
       if (entry.isIntersecting) {
         navAnchors.forEach(a => a.classList.remove('active'));
@@ -115,12 +111,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function setGalleryHeight() {
     if (!galeri || !galleryTrack) return;
+    if (window.innerWidth <= 768) { galeri.style.height = ''; return; }
     const extraScroll = Math.max(0, galleryTrack.scrollWidth - window.innerWidth);
     galeri.style.height = `${extraScroll + window.innerHeight}px`;
   }
 
   function updateGallery() {
     if (!galeri || !galleryTrack) return;
+    if (window.innerWidth <= 768) { galleryTrack.style.transform = ''; return; }
     const rect = galeri.getBoundingClientRect();
     const sectionHeight = galeri.offsetHeight;
     const viewHeight = window.innerHeight;

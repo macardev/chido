@@ -11,11 +11,13 @@ chido/
 ├── script.js        # Parallax burrito, scroll nav, Intersection Observer fade-in
 ├── public/
 │   └── images/
-│       ├── burito.png    # Parallax burrito image (transparent bg)
-│       ├── chido1.jpg    # Used in Hero chef card + Gallery
-│       ├── chido2.jpg    # Gallery
-│       ├── chido3.jpg    # Gallery
-│       └── chido4.jpg    # Gallery
+│       ├── burito.webp   # Parallax burrito image (transparent bg)
+│       ├── burito-bg3.webp # Body background texture
+│       ├── yasin.webp    # Chef portrait (Hero chef-card)
+│       ├── chido1.webp   # Used in Hero chef card + Gallery
+│       ├── chido2.webp   # Gallery
+│       ├── chido3.webp   # Gallery
+│       └── chido4.webp   # Gallery
 └── AGENTS.md
 ```
 
@@ -34,8 +36,9 @@ No build step — just open `index.html` in a browser. Static site, zero depende
 
 - **Navbar**: fixed top, transparent on hero → solid `#1A1A1A` after 80px scroll. Toggle class `.scrolled`.
 - **Parallax burrito**: `#parallax-burrito` — `position: fixed`, scroll-driven `translate(-50%, calc(-50% + scrollY * -0.3px)) rotate(scrollY * 0.02deg)`. Hidden on mobile via `display: none`.
-- **Fade-in**: sections use `.fade-in` class; Intersection Observer adds `.visible` at 25% threshold (80px root margin for navbar).
+- **Fade-in**: sections use `.fade-in` class; Intersection Observer adds `.visible` at 10% threshold (80px root margin for navbar). Once `.visible` is added, it is never removed.
 - **Active nav**: Intersection Observer tracks which `section[id]` is visible, sets `.active` on matching `a[href="#id"]`.
+- **Gallery horizontal scroll**: desktop-only. `#galeri` uses sticky positioning + JS-driven `translateX` on `.gallery-track`. On mobile (`≤768px`), gallery switches to a 2‑column flex-wrap grid with no scroll-driven animation.
 - **Hamburger**: toggles `.open` on `#nav-links`; auto-closes on link click.
 - **Smooth scroll**: CSS `scroll-behavior: smooth` on `<html>`; each `section[id]` has `scroll-margin-top: 80px`.
 
